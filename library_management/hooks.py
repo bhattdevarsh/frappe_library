@@ -10,6 +10,10 @@ app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "bhatt.devarsh17@gmail.com"
 app_license = "MIT"
+# for desk css
+app_include_css = ["assets/css/custom_app.min.css"]
+# for web css
+web_include_css = ["assets/css/custom_app.min.css"]
 
 # Includes in <head>
 # ------------------

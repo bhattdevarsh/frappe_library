@@ -1,7 +1,18 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
-<h1>{{ doc.article_name }}</h1>
-<i>{{doc.author}}</i>
-{% endblock %}
-<!-- this is a sample default web page template -->
+<div class="row">
+    <div class="col-sm-4">
+        <img src="{{ doc.image }}" class="img-responsive" style="max-height: 200px">
+    </div>
+    <div class="col-sm-4">
+        <h1>{{ doc.article_name }}</h1>
+        <i>{{doc.author}}</i>
+        <div class="row">
+            <p>{{doc.description}}</p>
+        </div>
+
+        <input type="button" text="Buy" value="Buy" class="btn-primary test">
+    </div>
+    {% endblock %}
+    <!-- this is a sample default web page template -->

@@ -1,6 +1,16 @@
-<div>
-	<b> Name: <a href={{ route }}>{{ doc.route }}</a></b><br>
-	<i>Author: </i>{{ doc.author }}
-	<br>
+<div class="row">
+
+	<div class="col-sm-4">
+		<a href="/Article/{{ doc.name }}">
+			<img src="{{ doc.image }}" class="img-responsive" style="max-height: 200px">
+		</a>
+	</div>
+	<div class="col-sm-4">
+		<b>Name: <a href={{ route }}>{{ doc.route }}</a></b><br>
+		<b>Author: </b>{{ doc.author }}<br>
+		<b>Publisher: </b>{{doc.publisher}}
+		<br>
+	</div>
 </div>
+<br>
 <!-- this is a sample default list template -->
